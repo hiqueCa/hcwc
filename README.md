@@ -17,7 +17,7 @@ A CLI implemented with Rust based on Unix's wc. Motivated by John [John Crickett
 - [x] Implement CLI file reading behaviour;
 - [x] Implement CLI `-c` command option behaviour;
 - [x] Implement CLI `-l` command option behaviour;
-- [ ] Implement CLI `-w` command option behaviour;
+- [x] Implement CLI `-w` command option behaviour;
 - [ ] Implement CLI `-m` command option behaviour;
 - [ ] Implement CLI no option behaviour;
 - [ ] Implement CLI standard input behaviour;

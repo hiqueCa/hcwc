@@ -1,6 +1,8 @@
 use std::env;
 use std::fs;
 
+use words_count::count;
+
 fn main() {
     let args: Vec<String> = env::args().collect();
 
@@ -17,5 +19,8 @@ fn main() {
     } else if command_option == "-l" {
         let newline_occurrences: &usize = &file_content.matches('\n').count();
         println!("{newline_occurrences}");
+    } else if command_option == "-w" {
+        let words_count: usize = count(&file_content).words;
+        println!("{words_count}");
     }
 }

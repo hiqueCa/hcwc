@@ -5,3 +5,21 @@ version = 3
 [[package]]
 name = "hcwc"
 version = "0.1.0"
+dependencies = [
+ "words-count",
+]
+
+[[package]]
+name = "unicode-blocks"
+version = "0.1.8"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c84398c527c802fbf222e5145f220382d60f1878e0e6cb4d22a3080949a8ddcd"
+
+[[package]]
+name = "words-count"
+version = "0.1.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d28653ddaede5475c44a03e4014ae19f35aa9b231c423228b28963cb873e4869"
+dependencies = [
+ "unicode-blocks",
+]

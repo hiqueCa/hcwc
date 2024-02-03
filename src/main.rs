@@ -14,5 +14,8 @@ fn main() {
     if command_option == "-c" {
         let file_bytes: &usize = &file_content.len();
         println!("{file_bytes}");
+    } else if command_option == "-l" {
+        let newline_occurrences: &usize = &file_content.matches('\n').count();
+        println!("{newline_occurrences}");
     }
 }
